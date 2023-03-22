@@ -1,0 +1,103 @@
+.sidebar {
+    width: 70%;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    
+    right: 0;
+    top: 100%;
+    position: absolute;
+    transform: translateX(100vw);
+
+    
+    background: #0a192f;
+    transition: ease-in-out 200ms;
+}
+
+.sidebar--active { transform: translateX(0vw); }
+
+.sidebar-icon { font-size: 2rem; }
+
+.sidebar-menu {
+    width: 50vw;
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    
+    right: 0;
+    display: none;
+    position: absolute;
+    transform: translateX(100%);
+    
+    background: #0a192f;
+}
+
+.sidebar-menu--active {
+    display: block;
+    transform: translateX(0);
+    transition: 250ms ease-in;
+}
+
+.sidebar-menu-list {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 0 1rem;
+    list-style: none;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+.sidebar-menu-listItem { margin-bottom: 1rem; }
+
+.sidebar-menu-listItem:hover { 
+    cursor: pointer;
+    padding-right: 1rem;
+    transition: ease-in-out 250ms;
+    border-right: 1px solid var(--secondary-Emerald);
+}
+
+.sidebar-menu-link,
+.sidebar-menu-link:visited,
+.sidebar-menu-link:hover { color: var(--mainText-MimiPink) }
+
+@media (min-width: 900px) {
+    .sidebar { width: 50%; }
+
+    .sidebar--active { transform: var(--contentWidth-900px); }
+}
+
+@media (min-width: 1200px) {
+    .sidebar {
+        height: 100%;
+        transform: none;
+        position: static;
+        box-sizing: border-box;
+    }
+
+    .sidebar-menu-list {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .sidebar-menu-listItem { margin: 0; }
+    
+    .sidebar-menu-listItem:not(:last-of-type) { margin-right: 1rem; }
+
+    .sidebar-menu-listItem:hover {
+        padding-right: 0;
+        border-right: 0;
+        padding-bottom: 5px;
+        border-bottom: 1px solid var(--secondary-Emerald);
+    }
+}

@@ -1,0 +1,26 @@
+:root {
+  /* Colors */
+  --primary-OxfordBlue: #0a192f;
+  --primary-OxfordBlue-lowAlpha: rgba(10, 25, 47, .9);
+  --secondary-Emerald: #06D6A0;
+  --mainText-MimiPink: #FFD5FF;
+
+  /* Dimensions */
+  --header-height: 15vh;
+  --contentWidth-900px: 80%;
+  --contentWidth-1200px: 60%;
+
+  /* Font */
+  --ff: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 20px;
+}
+
+#root {
+  width: 100%;
+  font-family: var(--ff);
+  color: var(--mainText-MimiPink);
+  background: #0a192f;
+}
