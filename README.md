@@ -6,7 +6,7 @@
 Um portfólio pessoal de página única que reúne uma apresentação juntamente com alguns projetos construídos.
 
 **en.**
-A personal single-page portfolio that contains an introductio text alongside with a few of projects built.
+A single-page personal portfolio that contains an introductio text alongside with a few of projects built.
 
 ### Links    
 
