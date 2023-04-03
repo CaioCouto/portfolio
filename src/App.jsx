@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Header, Main } from './components'
+import { Footer, Header, Main } from './components'
 
 import './App.css'
 import { ShowMenu } from './contexts'
@@ -12,6 +12,7 @@ function App() {
       <ShowMenu.Provider value={{ showMenu, setShowMenu }}>
         <Header/>
         <Main/>
+        <Footer/>
       </ShowMenu.Provider>
     </div>
   )
