@@ -1,0 +1,13 @@
+.NetworkIcons-links {
+    display: flex;
+    justify-content: center;
+}
+
+.NetworkIcons-link,
+.NetworkIcons-link:hover { color: var(--secondary-Emerald); }
+
+.NetworkIcons-link:not(:last-of-type) {
+    margin-right: 1rem;
+}
+
+.NetworkIcons-icon { font-size: 1.5rem; }
