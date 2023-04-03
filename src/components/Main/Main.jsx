@@ -22,12 +22,7 @@ function CTAButton({ label, targetSection }) {
 
 function Main() {    
     const { showMenu } = useContext(ShowMenu)
-
-    function handleCTAButtonClick() {
-        const projectsSection = document.querySelector('#projects')
-        projectsSection.scrollIntoView({ behavior:'smooth', block:'start' })
-    }
-
+    
     return (
         <main className={ `${styles['main']} ${showMenu ? styles['main--blur'] : ''}` }>
             <section id="home" className={ `main-section ${styles['main-section']} ${styles['main-section-bio']}` }>
@@ -40,10 +35,6 @@ function Main() {
                     </p>
                 </div>
                 <CTAButton label="Learn more about me" targetSection="aboutme"/>
-                {/* <a className={ styles['main-link-bio'] } onClick={ handleCTAButtonClick }>
-                    <FaArrowDown />
-                    Learn more about me
-                </a> */}
             </section>
 
             <section id="aboutme" className={ `main-section ${styles['main-section']}` }>
