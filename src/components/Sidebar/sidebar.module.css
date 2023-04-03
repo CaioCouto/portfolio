@@ -20,8 +20,6 @@
 
 .sidebar--active { transform: translateX(0vw); }
 
-.sidebar-icon { font-size: 2rem; }
-
 .sidebar-menu {
     width: 50vw;
     height: 100%;
@@ -104,4 +102,6 @@
         padding-bottom: 5px;
         border-bottom: 1px solid var(--secondary-Emerald);
     }
+
+    .sidebar-icons { display: none;}
 }

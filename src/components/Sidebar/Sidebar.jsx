@@ -21,7 +21,7 @@ function Sidebar() {
                 <li className={ styles["sidebar-menu-listItem"]}><a className={ styles["sidebar-menu-link"]} onClick={ scrolltoContent }>Projects</a></li>
                 <li className={ styles["sidebar-menu-listItem"]}><a className={ styles["sidebar-menu-link"]} onClick={ scrolltoContent }>About Me</a></li>
             </ul>
-            <NetworkIcons />
+            <NetworkIcons className={ `${styles["sidebar-icons"]}` }/>
         </aside>
     )
 }

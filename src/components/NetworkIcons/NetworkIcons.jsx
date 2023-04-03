@@ -15,12 +15,12 @@ const links = [
     },
 ]
 
-function NetworkIcons() {
+function NetworkIcons({ className }) {
     return (   
         <div className={ styles["NetworkIcons-links"] }>
             {
                 links.map((link, index) => (
-                    <a key={ index } className={ styles["NetworkIcons-link"] } href={ link.url } target='blank_'>
+                    <a key={ index } className={ `${styles["NetworkIcons-link"]} ${className}` } href={ link.url } target='blank_'>
                         <p style={{ display: 'none' }}>{ link.label }</p>
                         <link.icon 
                             className={ `${styles["NetworkIcons-icon"]} ${styles["NetworkIcons-icon-menu"]}` }
