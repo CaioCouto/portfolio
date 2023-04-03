@@ -73,7 +73,7 @@
 .main-section-profilePicture--desktop { display: none; }
 
 .main-section-profilePicture--mobile {
-    max-width: 65%;
+    max-width: 50%;
     margin: 0 auto 1rem;
     display: block;
 }
@@ -125,6 +125,10 @@
 
 .main-repository-link,
 .main-repository-link:visited { color: var(--secondary-Emerald); }
+
+@media (min-width: 600px) {
+    .main-section-profilePicture--mobile { max-width: 40%; }
+}
 
 @media (min-width: 900px) {
     .main {
